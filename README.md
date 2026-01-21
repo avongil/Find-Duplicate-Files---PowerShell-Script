@@ -4,7 +4,7 @@ there is now a linux version of this script:
 
 Bash script example:
 
-
+```bash
 sudo ./find-duplicates.sh \
     -p /srv \
     -x /srv/GMT_DATA/Cobian_Incremental_NextcloudGMT_Backup \
@@ -13,18 +13,21 @@ sudo ./find-duplicates.sh \
     -e /srv/GMT_DATA/duplicates_bash.csv \
 && sudo chown alvaro:alvaro /srv/GMT_DATA/duplicates_bash.csv \
 && sudo chmod 660 /srv/GMT_DATA/duplicates_bash.csv
+
 ----
 
 alternatley, you may try using rmlint instead.  First install rmlint to on your system then:
 
-"rmlint \
+```bash
+rmlint \
   -b \
   -F \
   --no-hardlinked \
-  /dirtoscan/ \
-sudo mv ~r/rmlint.json /srv/GMT_DATA/rmlint.json \
+  /dirtoscan/
+
+sudo mv ~/rmlint.json /srv/GMT_DATA/rmlint.json \
 && sudo chown alvaro:alvaro /srv/GMT_DATA/rmlint.json \
-&& sudo chmod 660 /srv/GMT_DATA/rmlint.json"
+&& sudo chmod 660 /srv/GMT_DATA/rmlint.json
 
 
 
