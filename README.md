@@ -13,8 +13,18 @@ sudo ./find-duplicates.sh \
     -e /srv/GMT_DATA/duplicates_bash.csv \
 && sudo chown alvaro:alvaro /srv/GMT_DATA/duplicates_bash.csv \
 && sudo chmod 660 /srv/GMT_DATA/duplicates_bash.csv
+----
 
+alternatley, you may try using rmlint instead.  First install rmlint to on your system then:
 
+rmlint \
+  -b \
+  -F \
+  --no-hardlinked \
+  /dirtoscan/ \
+sudo mv ~r/rmlint.json /srv/GMT_DATA/rmlint.json \
+&& sudo chown alvaro:alvaro /srv/GMT_DATA/rmlint.json \
+&& sudo chmod 660 /srv/GMT_DATA/rmlint.json
 
 
 
