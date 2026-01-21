@@ -16,7 +16,12 @@ sudo ./find-duplicates.sh \
 ```
 ----
 
-alternatley, you may try using rmlint instead.  First install rmlint to on your system then:
+alternatley, you may try using rmlint instead.  First install rmlint to on your system. Note that in Deb12 it installs with cli tools only, Debian 13 will install with the gui.
+to make a minimal rmlint install on debian 13:
+```bash
+sudo apt update
+sudo apt install --no-install-recommends rmlint
+```
 
 ```bash
 rmlint \
