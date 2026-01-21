@@ -17,14 +17,14 @@ sudo ./find-duplicates.sh \
 
 alternatley, you may try using rmlint instead.  First install rmlint to on your system then:
 
-rmlint \
+"rmlint \
   -b \
   -F \
   --no-hardlinked \
   /dirtoscan/ \
 sudo mv ~r/rmlint.json /srv/GMT_DATA/rmlint.json \
 && sudo chown alvaro:alvaro /srv/GMT_DATA/rmlint.json \
-&& sudo chmod 660 /srv/GMT_DATA/rmlint.json
+&& sudo chmod 660 /srv/GMT_DATA/rmlint.json"
 
 
 
